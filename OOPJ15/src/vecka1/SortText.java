@@ -41,10 +41,10 @@ public class SortText {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return null;
+			
 		}
 		return lines;
-		//this is a test
+		
 	}
 
 }
