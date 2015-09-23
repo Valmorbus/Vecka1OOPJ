@@ -29,7 +29,7 @@ public class CharStreams {
 				}
 			
 		}
-		catch (FileNotFoundException e) {
+		catch (FileNotFoundException | ArithmeticException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}catch (IOException e1) {
