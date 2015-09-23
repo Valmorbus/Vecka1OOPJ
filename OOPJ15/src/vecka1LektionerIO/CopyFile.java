@@ -15,12 +15,14 @@ import java.io.IOException;
 public class CopyFile {
 
 	public static void main(String[] args) {
+		CopyFile cp = new CopyFile();
+		cp.makeFileCopy();
 		
 	}
-	private void copyFile()
+	private void makeFileCopy()
 	{
-		File file = new File("C:/Users/borgs_000/workspace/OOPJ15/text/sheep.jpeg");
-		File file2 = new File("C:/Users/borgs_000/workspace/OOPJ15/text/sheep2.jpeg");
+		File file = new File("C:/Users/borgs_000/workspace/OOPJ15/text/sheep.jpg");
+		File file2 = new File("C:/Users/borgs_000/workspace/OOPJ15/text/sheep4.jpg");
 		int byteToRead=0;
 		FileInputStream fin = null;
 		FileOutputStream fout = null;
@@ -34,13 +36,21 @@ public class CopyFile {
 		
 		try {
 			do{
-				byteToRead = fin.read();
+				byteToRead = fin.read(); //läser byte
 				if (byteToRead !=-1)
-					fout.write(byteToRead);
+					fout.write(byteToRead);//skriver byte
 			}while (byteToRead != -1);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally{
+			try {
+				fin.close();
+				fout.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 	}
