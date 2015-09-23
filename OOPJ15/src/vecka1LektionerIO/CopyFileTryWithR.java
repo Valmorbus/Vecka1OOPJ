@@ -1,4 +1,4 @@
-package vecka1;
+package vecka1LektionerIO;
 
 import java.io.File;
 import java.io.FileInputStream;
