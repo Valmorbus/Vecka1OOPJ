@@ -31,7 +31,7 @@ public class CopyFileTryWithR {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		;
+		
 
 	}
 }
