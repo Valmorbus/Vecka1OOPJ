@@ -1,4 +1,4 @@
-package vecka2;
+package vecka2.shapes;
 
 public class Circle implements Shape{
 	float radie; 
