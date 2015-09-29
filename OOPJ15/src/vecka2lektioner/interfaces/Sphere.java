@@ -1,4 +1,4 @@
-package Vecka2;
+package vecka2lektioner.interfaces;
 
 public class Sphere implements VolumeHandler {
 	private float radie;
