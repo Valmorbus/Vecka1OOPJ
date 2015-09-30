@@ -23,17 +23,9 @@ public class SortText {
 	{
 		ArrayList<String> lines = new ArrayList<String>();
 		String path = "C:/Users/borgs_000/workspace/OOPJ15/text/array.txt";
-		int counter = 0;
-		try(BufferedReader br = new BufferedReader(new FileReader(path));
-				BufferedReader control = new BufferedReader(new FileReader(path))){		
-			while (control.readLine() != null)
-			{
-				counter++;
-			}
-			control.close();
-			for (int i = 0; i < counter; i++) {
+		try(BufferedReader br = new BufferedReader(new FileReader(path))){		
+			while (br.readLine() != null)
 				lines.add(br.readLine());
-			}
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
