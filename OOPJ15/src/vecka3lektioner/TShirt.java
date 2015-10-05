@@ -5,6 +5,7 @@ import java.io.IOException;
 
 /**
  * Test class for JavaDoc
+ * Tshirt with short sleeves
  * @author borgs_000
  * @version 1.0
  * 
