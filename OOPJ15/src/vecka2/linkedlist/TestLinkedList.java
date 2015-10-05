@@ -20,6 +20,11 @@ public class TestLinkedList {
 		System.out.println(test.tostring());
 		test.add("hej");
 		System.out.println(test.getSize());
+		for (String s : test)
+		{
+			System.out.println("foreach");
+			System.out.println(s);
+		}
 
 	}
 

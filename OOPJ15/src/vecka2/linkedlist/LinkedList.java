@@ -1,6 +1,8 @@
 package vecka2.linkedlist;
 
-public class LinkedList<Typ> {
+import java.util.Iterator;
+
+public class LinkedList<Typ> implements Iterable<Typ>{
 	Node<Typ> head = null;
 	private int size = 0;
 
@@ -42,13 +44,19 @@ public class LinkedList<Typ> {
 
 	private String toString(Node<Typ> node) {
 
-		if (node == null) { // base case: no nodes in the list
+		if (node == null) { 
 			return "";
-		} else { // convert node to text and recurse with remainder list
+		} else { 
 			Node<Typ> next = node.getNext();
 			return node.getType() + (next == null ? "" : "\n") + toString(next);
 
 		}
+	}
+
+	@Override
+	public Iterator<Typ> iterator() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
