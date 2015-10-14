@@ -1,4 +1,4 @@
-package vecka4lektioner.maps;
+package vecka4.sortCustomers;
 
 public class Subscriber extends Buyer {
 	
@@ -23,14 +23,18 @@ public class Subscriber extends Buyer {
 	}
 	
 
-	protected int calculateValue(int price, int time, int subscriptionCost) {
+	public int calculateValue(int price, int subscriptionCost) {
 		int purchaseValue = calculateValue(price);
-		int subscriptionValue = time*subscriptionCost;
+		int subscriptionValue = this.time*subscriptionCost;
 		
 		int totalValue = purchaseValue +subscriptionValue;	
 		return totalValue;
 		//return super.calculateValue(price);
 	}
+
+
+
+	
 	
 
 }

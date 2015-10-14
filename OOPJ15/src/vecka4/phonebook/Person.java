@@ -1,6 +1,6 @@
 package vecka4.phonebook;
 
-public class Person {
+class Person {
 	protected String name;
 	protected String adress;
 	protected String gender;

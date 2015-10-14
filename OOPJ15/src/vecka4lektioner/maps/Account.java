@@ -14,6 +14,7 @@ public class Account {
 		Account a = new Account();
 		a.setAccount();
 		a.setAccountsorted();
+		a.setAccountsorted2();
 
 	}
 
@@ -61,5 +62,24 @@ public class Account {
 		}
 
 	}
+	private void setAccountsorted2() {
+
+		TreeMap<String, Float> accountMap = new TreeMap<String, Float>(new CompareLength());
+		accountMap.put("Robin", 5.0f);
+		accountMap.put("Owen", 2578900.54f);
+		accountMap.put("Simon", -25000f);
+		accountMap.put("Anton", 35700.8f);
+		accountMap.put("Anton2", 35770.8f);
+		System.out.println("Här");
+		Set<Entry<String, Float>> accountMapEntry = accountMap.entrySet();
+		Iterator<Entry<String, Float>> iter = accountMapEntry.iterator();
+
+		while (iter.hasNext()) {
+			Entry<String, Float> person = iter.next();
+			System.out.println(person.getKey() + " : " + person.getValue());
+		}
+
+	}
+	
 
 }

@@ -1,4 +1,4 @@
-package vecka4lektioner.maps;
+package vecka4.sortCustomers;
 
 public abstract class Customer {
 	
@@ -52,6 +52,6 @@ public abstract class Customer {
 	public void setCustomerNumber(int customerNumber) {
 		this.customerNumber = customerNumber;
 	}
-	
+
 	
 }

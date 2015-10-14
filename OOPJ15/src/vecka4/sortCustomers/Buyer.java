@@ -1,4 +1,4 @@
-package vecka4lektioner.maps;
+package vecka4.sortCustomers;
 
 public class Buyer extends Customer {
 
@@ -12,7 +12,7 @@ public class Buyer extends Customer {
 	}
 	
 
-	protected int calculateValue(int price)
+	public int calculateValue(int price)
 	{
 		int value = price*purchases; 
 		return value;
