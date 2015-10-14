@@ -13,8 +13,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.Map.Entry;
 
-import vecka4.sortCustomers.ValueComparator;
-
 public class AdressBook {
 	File file = new File("C:/Users/borgs_000/git/Vecka1OOPJ/OOPJ15/src/vecka4/phonebook/Adressbook.txt");
 	TreeMap<String, Person> adressMap = new TreeMap<>();
@@ -28,6 +26,7 @@ public class AdressBook {
 	private void menu() {
 		boolean inValid = true;
 		while (true) {
+			@SuppressWarnings("resource")
 			Scanner sc = new Scanner(System.in);
 			int choice = 0;
 			System.out.println();
@@ -127,6 +126,7 @@ public class AdressBook {
 
 	private void addEntry() {
 		Person person = new Person("", "", "", "", "");
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter first name: ");
 		person.setFirstName(sc.nextLine());
@@ -143,6 +143,7 @@ public class AdressBook {
 	}
 
 	private void searchEntry() {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter searchword: ");
 		String search = sc.nextLine();
@@ -178,6 +179,7 @@ public class AdressBook {
 	}
 
 	private void removeEntry() {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter searchword: ");
 		String search = sc.nextLine();
@@ -197,6 +199,7 @@ public class AdressBook {
 	}
 
 	private void editEntry() {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter searchword: ");
 		String search = sc.nextLine();
@@ -240,6 +243,7 @@ public class AdressBook {
 		TreeMap<String, Person> tempMap = new TreeMap<>();
 		tempMap.putAll(adressMap);
 		while (true) {
+			@SuppressWarnings("resource")
 			Scanner sc = new Scanner(System.in);
 			int choice = 0;
 			System.out.println();
