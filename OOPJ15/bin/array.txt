@@ -1,0 +1,5 @@
+Detta är ett test.
+För att kontrollera en ArrayList.
+Kylskåp. 
+
+Tror detta var någon typ av haiku. 
