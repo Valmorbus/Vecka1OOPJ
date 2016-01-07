@@ -15,7 +15,7 @@ public class ChildThreadRunner {
 				Thread.sleep(500);
 				System.out.println("main thread " +i);
 				
-				
+				//sdfs
 				
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
