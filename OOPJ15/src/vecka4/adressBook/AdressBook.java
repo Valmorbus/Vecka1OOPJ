@@ -14,7 +14,7 @@ import java.util.TreeMap;
 import java.util.Map.Entry;
 
 public class AdressBook {
-	File file = new File("C:/Users/borgs_000/git/Vecka1OOPJ/OOPJ15/src/vecka4/phonebook/Adressbook.txt");
+	File file = new File("Adressbook.txt");
 	TreeMap<String, Person> adressMap = new TreeMap<>();
 
 	public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class AdressBook {
 			System.out.println();
 			System.out.println("Welcome to the Adressbook");
 			System.out.println("1) Load from file");
-			System.out.println("2) Save from file");
+			System.out.println("2) Save to file");
 			System.out.println("3) Add an entry");
 			System.out.println("4) Remove an entry");
 			System.out.println("5) Edit an existing entry");
